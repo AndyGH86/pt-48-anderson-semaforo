@@ -1,24 +1,33 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 
+
+
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  const [colorIndex, setColorIndex] = useState(0);
+  const colors = ['red', 'yellow', 'green'];
+   useEffect(() => {
+     const timer = setTimeout(() => { 
+      setColorIndex((colorIndex + 1) % 3);
+     }, 3000); 
+      return () => clearTimeout(timer);
+     }, [colorIndex]);
+
+    const currentColor = colors[colorIndex];
+
+   
+
+  return (<>
+  <div className='App'>
+  <div className='div-container'>
+    <div className= {currentColor=== 'red' ? 'color__rojo' : 'color__default'}></div>
+    <div className= {currentColor=== 'yellow' ? 'color__amarillo' : 'color__default'}></div>
+    <div className= {currentColor=== 'green' ? 'color__verde' : 'color__default'}></div>
+    
+   </div>
+  </div>
+    </>
   );
 }
 

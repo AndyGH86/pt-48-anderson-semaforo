@@ -1,13 +1,59 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.App{
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+  width: 100%;
+  height: 1000px;
+  background: #00acff;
+background: linear-gradient(90deg,#00acff 50%, #0041ff 80%);
+background: -webkit-linear-gradient(90deg,#00acff 50%, #0041ff 80%);
+background: -moz-linear-gradient(90deg,#00acff 50%, #0041ff 80%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+.div-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid;
+  width: 15rem;
+  height: 30rem;
+  background-color: black;
+  border-radius: 1rem;
+  box-shadow: -1px -5px 29px 11px rgba(0,3,0,0.74);
+-webkit-box-shadow: -1px -5px 29px 11px rgba(0,3,0,0.74);
+-moz-box-shadow: -1px -5px 29px 11px rgba(0,3,0,0.74);
+}
+
+.color__verde {
+  border: 1px solid;
+  border-radius: 100%;
+  width: 90%;
+  height: 10rem;
+  background-color: green ;
+  
+}
+.color__amarillo {
+  border: 1px solid;
+  border-radius: 100%;
+  width: 90%;
+  height: 10rem;
+  background-color: yellow ;
+}
+.color__rojo {
+  border: 1px solid;
+  border-radius: 100%;
+  width: 90%;
+  height: 10rem;
+  background-color: red ;
+
+}
+.color__default {
+  border: 1px solid;
+  border-radius: 100%;
+  width: 90%;
+  height: 10rem;
+  background-color: grey ;
+
 }
