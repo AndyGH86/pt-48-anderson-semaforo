@@ -15,10 +15,12 @@ background: -moz-linear-gradient(90deg,#00acff 50%, #0041ff 80%);
 .div-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   border: 2px solid;
   width: 15rem;
-  height: 30rem;
+  height: 33rem;
+  padding: 4px;
   background-color: black;
   border-radius: 1rem;
   box-shadow: -1px -5px 29px 11px rgba(0,3,0,0.74);
