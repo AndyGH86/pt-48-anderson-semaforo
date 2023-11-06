@@ -32,7 +32,11 @@ background: -moz-linear-gradient(90deg,#00acff 50%, #0041ff 80%);
   width: 90%;
   height: 10rem;
   background-color: green ;
-  
+  box-shadow: -2px 0px 28px 5px rgba(0,0,0,0.99) inset;
+-webkit-box-shadow: -2px 0px 28px 5px rgba(0,0,0,0.99) inset;
+-moz-box-shadow: -2px 0px 28px 5px rgba(0,0,0,0.99) inset;
+
+
 }
 .color__amarillo {
   border: 1px solid;
@@ -40,6 +44,9 @@ background: -moz-linear-gradient(90deg,#00acff 50%, #0041ff 80%);
   width: 90%;
   height: 10rem;
   background-color: yellow ;
+  box-shadow: -2px 0px 28px 5px rgba(0,0,0,0.99) inset;
+  -webkit-box-shadow: -2px 0px 28px 5px rgba(0,0,0,0.99) inset;
+  -moz-box-shadow: -2px 0px 28px 5px rgba(0,0,0,0.99) inset;
 }
 .color__rojo {
   border: 1px solid;
@@ -47,7 +54,10 @@ background: -moz-linear-gradient(90deg,#00acff 50%, #0041ff 80%);
   width: 90%;
   height: 10rem;
   background-color: red ;
-
+  box-shadow: -2px 0px 28px 5px rgba(0,0,0,0.99) inset;
+  -webkit-box-shadow: -2px 0px 28px 5px rgba(0,0,0,0.99) inset;
+  -moz-box-shadow: -2px 0px 28px 5px rgba(0,0,0,0.99) inset;
+  
 }
 .color__default {
   border: 1px solid;
